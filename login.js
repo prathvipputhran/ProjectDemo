@@ -8,21 +8,19 @@ document.addEventListener("DOMContentLoaded", function() {
         const username = document.getElementById("username").value;
         const password = document.getElementById("password").value;
 
-        // You can add validation here if needed
-
         // Example: Simple validation (just checking if fields are not empty)
         if (username.trim() === "" || password.trim() === "") {
             alert("Please enter both username and password.");
             return;
         }
 
-        // Here you can handle form submission, e.g., sending data to a server
-        // For demonstration purposes, let's just log the values
-        console.log("Username:", username);
-        console.log("Password:", password);
+        // Simulate successful login (replace with actual authentication logic)
+        // For demo, always consider it successful
+        // In real scenario, you would make an AJAX call to validate credentials
+        const isLoggedIn = true;
+        localStorage.setItem('isLoggedIn', isLoggedIn);
 
-        // Optionally, you can redirect the user to another page after successful login
-        // window.location.href = "dashboard.html";
+        // Redirect to sum.html after successful login
+        window.location.href = "sum.html";
     });
 });
-

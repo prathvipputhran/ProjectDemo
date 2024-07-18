@@ -3,7 +3,7 @@ window.onload = function() {
         window.location.href = 'login.html';
     }
 };
- 
+
 document.getElementById('sumForm').addEventListener('submit', function(e) {
     e.preventDefault();
     const number1 = parseFloat(document.getElementById('number1').value);
